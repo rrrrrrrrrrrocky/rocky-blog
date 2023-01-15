@@ -38,7 +38,7 @@ const imageUpload = async (req, res) => {
   const status = api.status;
   const data = await api.json();
 
-  console.log(data);
+  console.log("data >>>", data);
 
   if (status === 200) {
     res.status(status).json({ success: true });
